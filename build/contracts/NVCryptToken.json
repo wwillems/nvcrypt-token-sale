@@ -1,0 +1,351 @@
+{
+  "contractName": "NVCryptToken",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5064174876e800600081905550609e8061002b6000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600054815600a165627a7a72305820cdb73e1b3b29643ae15321bcea67f356b744e70f746bd49a548c8c8d8a76c7a20029",
+  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600054815600a165627a7a72305820cdb73e1b3b29643ae15321bcea67f356b744e70f746bd49a548c8c8d8a76c7a20029",
+  "sourceMap": "25:144:1:-;;;80:87;8:9:-1;5:2;;;30:1;27;20:12;5:2;80:87:1;129:12;115:11;:26;;;;25:144;;;;;;",
+  "deployedSourceMap": "25:144:1:-;;;;;;;;;;;;;;;;;;;;;;;;50:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;50:26:1;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.2;\n\ncontract NVCryptToken {\n\tuint256 public totalSupply;\n\n\tfunction NVCryptToken() public {\n\t\ttotalSupply = 100000000000; // 100 billion tokens\n\t}\n}",
+  "sourcePath": "/Users/williamwillems/code/nvcrypt-token-sale/contracts/NVCryptToken.sol",
+  "ast": {
+    "absolutePath": "/Users/williamwillems/code/nvcrypt-token-sale/contracts/NVCryptToken.sol",
+    "exportedSymbols": {
+      "NVCryptToken": [
+        69
+      ]
+    },
+    "id": 70,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 69,
+        "linearizedBaseContracts": [
+          69
+        ],
+        "name": "NVCryptToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "totalSupply",
+            "nodeType": "VariableDeclaration",
+            "scope": 69,
+            "src": "50:26:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "50:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 67,
+              "nodeType": "Block",
+              "src": "111:56:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 65,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 63,
+                      "name": "totalSupply",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 60,
+                      "src": "115:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "313030303030303030303030",
+                      "id": 64,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "129:12:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_100000000000_by_1",
+                        "typeString": "int_const 100000000000"
+                      },
+                      "value": "100000000000"
+                    },
+                    "src": "115:26:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 66,
+                  "nodeType": "ExpressionStatement",
+                  "src": "115:26:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 68,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "NVCryptToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 61,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "101:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 62,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "111:0:1"
+            },
+            "scope": 69,
+            "src": "80:87:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 70,
+        "src": "25:144:1"
+      }
+    ],
+    "src": "0:169:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/williamwillems/code/nvcrypt-token-sale/contracts/NVCryptToken.sol",
+    "exportedSymbols": {
+      "NVCryptToken": [
+        69
+      ]
+    },
+    "id": 70,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 69,
+        "linearizedBaseContracts": [
+          69
+        ],
+        "name": "NVCryptToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "totalSupply",
+            "nodeType": "VariableDeclaration",
+            "scope": 69,
+            "src": "50:26:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "50:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 67,
+              "nodeType": "Block",
+              "src": "111:56:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 65,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 63,
+                      "name": "totalSupply",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 60,
+                      "src": "115:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "313030303030303030303030",
+                      "id": 64,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "129:12:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_100000000000_by_1",
+                        "typeString": "int_const 100000000000"
+                      },
+                      "value": "100000000000"
+                    },
+                    "src": "115:26:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 66,
+                  "nodeType": "ExpressionStatement",
+                  "src": "115:26:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 68,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "NVCryptToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 61,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "101:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 62,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "111:0:1"
+            },
+            "scope": 69,
+            "src": "80:87:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 70,
+        "src": "25:144:1"
+      }
+    ],
+    "src": "0:169:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x352539790504df7ba5ff326e3b0fe55d1acede2e",
+      "transactionHash": "0xbb251f2c77d59c338d02b876bd7536334b17cd1ad9d3c43f20fec69662defe2d"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-12-16T21:21:57.604Z"
+}
