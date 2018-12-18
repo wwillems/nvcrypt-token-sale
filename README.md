@@ -7,17 +7,12 @@ NVCryptToken.deployed().then(function(instance) { tokenInstance = instance; })
 tokenInstance.name();
 tokenInstance.symbol();
 tokenInstance.standard();
-
 tokenInstance.totalSupply().then(function(totalSupply) { supply=totalSupply; })
 supply.toNumber();
-
 web3.eth.accounts();
-
 admin = web3.eth.accounts[0];
-
 tokenInstance.balanceOf(admin).then(function(bal) { balance=bal; });
 balance.toNumber();
-
 receiver = web3.eth.accounts[1]; tokenInstance.transfer(receiver, 1, { from:admin; })
 tokenInstance.balanceOf(admin);
 tokenInstance.balanceOf(receiver)
@@ -34,6 +29,16 @@ tokenInstance.balanceOf(fromAccount)
 tokenInstance.balanceOf(toAccount)
 tokenInstance.allowance(fromAccount)
 tokenInstance.allowance(fromAccount, spendingAccount))
+
+
+Getting app up and running:
+
+NVCryptTokenSale.deployed().then(function(i) {tokenSale = i;})
+NVCryptToken.deployed().then(function(i) {token = i;})
+tokensAvailable = 750000;
+admin = web3.eth.accounts[0];
+token.transfer(tokenSale.address, tokensAvailable, {from: admin})
+token.balanceOf(tokenSale.address)
 
 
 
